@@ -21,12 +21,14 @@ function mostrarAumento()
 
 	// realizo las operaciones
 
-	descuento = importe * 0.25;
-
-	resultado = importe - descuento;
+	descuento = prompt("Ingrese su descuento en numero (Ej: si es 10% ingrese 10)");
+	descuento = parseFloat(descuento);
+	valorDescuento = importe * (descuento/100);
+	resultado = importe - valorDescuento;
 
 	// muestro el resultado
 	document.getElementById("txtIdResultado").value = resultado;
+	alert("Su importe es de "+ importe + ", el descuento es de "+ valorDescuento + " y su importe con descuento es de " + resultado )
 
 
 }
@@ -45,3 +47,12 @@ salida
 Id del resultado: txtIdResultado
 
 */
+/*
+10 bis 
+lo anterior mas.
+se debe pedir el % por prompt
+
+mostrar por alert el importe, el descuento, el importe con Descuento
+"su importe es 1000 , el Descuento es de 250 y su importe con descuento es 750"
+*/
+
