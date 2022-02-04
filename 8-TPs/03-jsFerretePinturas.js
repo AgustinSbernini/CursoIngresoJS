@@ -20,7 +20,6 @@ function FahrenheitCentigrados ()
 
 }
 
-
 function CentigradosFahrenheit () 
 {
 	

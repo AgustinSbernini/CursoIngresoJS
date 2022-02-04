@@ -18,12 +18,12 @@ function mostrarAumento()
 	// parseFloat para convertir el texto en numero
 	sueldo = parseFloat(sueldo);
 
-	// realizo la operacion
-
+	// tomo el dato del aumento por prompt y lo parseo
 	aumento = prompt("ingrese el aumento en numero entero (Ej: si es 10% ingrese 10)");
 	aumento = parseInt(aumento);
+	
+	// realizo la operacion
 	aumento = sueldo * (aumento/100);
-
 	resultado = sueldo + aumento;
 
 	// muestro el resultado

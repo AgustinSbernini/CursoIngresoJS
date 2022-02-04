@@ -26,7 +26,6 @@ function Sumar ()
 
 	alert("La suma es " + resultado);
 
-
 }
 function Promedio () 
 {

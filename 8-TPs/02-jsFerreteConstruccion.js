@@ -30,7 +30,6 @@ function Rectangulo ()
 
 	alert("El perimetro de su terreno es de " + perimetro + " cm y se debe alambrar con " + cantidadDeHilos + " metros de hilos de alambres");
 
-
 }
 function Circulo () 
 {
