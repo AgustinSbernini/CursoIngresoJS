@@ -1,6 +1,6 @@
 /*
 Sbernini Agustin DIV E
-E/S ej9
+E/S ej9 bis
 Debemos lograr tomar el importe por ID ,
 transformarlo a entero (parseInt), luego
 mostrar el importe con un aumento del 10 %
@@ -20,7 +20,9 @@ function mostrarAumento()
 
 	// realizo la operacion
 
-	aumento = sueldo * 0.1;
+	aumento = prompt("ingrese el aumento en numero entero (Ej: si es 10% ingrese 10)");
+	aumento = parseInt(aumento);
+	aumento = sueldo * (aumento/100);
 
 	resultado = sueldo + aumento;
 
@@ -44,3 +46,9 @@ salida:
 Id del resultado: txtIdResultado
 
 */
+/*
+9 bis 
+lo anterior mas.
+se debe pedir el % por prompt
+*/
+
