@@ -1,7 +1,21 @@
+/*
+Sbernini Agustin DIV E
+E/S ej if 2
+*/
 function mostrar()
 {
 	//tomo la edad  
-	alert("ok");
-	
+	var edadIngresada;
 
-}//FIN DE LA FUNCIÓN
+	edadIngresada = document.getElementById("txtIdEdad").value;
+
+	edadIngresada = parseInt(edadIngresada);
+	
+	if (edadIngresada > 17) //es más optimo que >= 18
+	{
+		alert("Usted es mayor de edad");
+	}
+
+	alert("Fin de la función");
+
+}
