@@ -1,6 +1,7 @@
 /*
 Sbernini Agustin DIV E
 E/S ej if 2
+Al ingresar una edad debemos informar solo si la persona es mayor de edad
 */
 function mostrar()
 {
@@ -19,3 +20,18 @@ function mostrar()
 	alert("Fin de la función");
 
 }
+
+/*
+
+entrada:
+-Id
+Id edadIngresada = txtIdEdad
+
+proceso:
+if
+Operador racional >
+
+salida:
+alert
+
+*/

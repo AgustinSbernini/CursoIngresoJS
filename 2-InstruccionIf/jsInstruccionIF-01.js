@@ -25,4 +25,18 @@ function mostrar()
 	alert("Fin de la función");	
 
 }
-//FIN DE LA FUNCIÓN
+
+/*
+
+entrada:
+-Id
+Id edad = txtIdEdad
+
+proceso:
+if
+Operador racional ==
+
+salida:
+alert
+
+*/
