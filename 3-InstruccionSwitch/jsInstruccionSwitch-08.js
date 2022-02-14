@@ -1,6 +1,25 @@
+/*
+Sbernini Agustin DIV E
+E/S ej switch 8
+Al seleccionar un destino informar si hace FRIO o CALOR en ese destino
+*/
+
 function mostrar()
 {
-	var destinoIngresado =txtIdDestino.value;
-	alert(destinoIngresado);
+	var destino = document.getElementById("txtIdDestino").value;
+	var mensaje;
 
-}//FIN DE LA FUNCIÓN
+	switch(destino)
+	{
+		case "Bariloche":
+		case "Ushuaia":
+			mensaje = "Hace frío";
+			break;
+		default:
+			mensaje = "Hace calor";
+			break;
+	}
+
+	alert(mensaje);
+
+}

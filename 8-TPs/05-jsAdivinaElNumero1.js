@@ -38,7 +38,7 @@ function verificar()
 	{
 		document.getElementById("txtIdIntentos").value = "Se pasó...";
 	}
-	else
+	else if (numeroIngresado < numeroSecreto)
 	{
 		document.getElementById("txtIdIntentos").value = "falta...";
 	}
