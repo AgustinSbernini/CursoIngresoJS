@@ -20,7 +20,7 @@ function CalcularPrecio ()
     var resultado;
     var impuesto;
 
-
+/*  opción solo if
     if (cantLamparas > 5) 
     {
         resultado = ((cantLamparas * 35) * 0.5);
@@ -65,6 +65,140 @@ function CalcularPrecio ()
     else
     {
         resultado = (cantLamparas * 35);
+    }
+
+    resultado = resultado.toFixed(2);
+
+    if (resultado > 120)
+    {
+        document.getElementById("txtIdprecioDescuento").value = ("$" + (resultado * 1.1) +" y de IIBB usted pago $" + (resultado * 0.1));
+    }
+    else
+    {
+        document.getElementById("txtIdprecioDescuento").value = ("$" + resultado);
+    }
+*/
+/* opción if/switch
+
+    if (cantLamparas > 5)
+    {
+        resultado = ((cantLamparas * 35) * 0.5);
+    }
+    else if (cantLamparas == 5)
+    {
+        switch (marca)
+        {  
+            case "ArgentinaLuz":
+                resultado = (cantLamparas * 35 * 0.6);
+                break;
+
+            default:
+                resultado = (cantLamparas * 35 * 0.7);
+        }
+    }
+    else if (cantLamparas == 4)
+    {
+        switch (marca)
+        {
+            case "ArgentinaLuz":
+            case "FelipeLamparas":
+                resultado = (cantLamparas * 35 * 0.75);
+                break;
+        
+            default:
+                resultado = (cantLamparas * 35 * 0.8);
+        }
+    }
+    else if (cantLamparas == 3)
+    {
+        switch (marca)
+        {
+            case "ArgentinaLuz":
+                resultado = (cantLamparas * 35 * 0.85);
+                break;
+
+            case "FelipeLamparas":
+                resultado = (cantLamparas * 35 * 0.9);
+                break;   
+
+            default:
+                resultado = (cantLamparas * 35 * 0.95);
+        }
+    }
+    else
+    {
+        resultado = (cantLamparas * 35);
+    }
+
+    resultado = resultado.toFixed(2);
+
+    if (resultado > 120)
+    {
+        document.getElementById("txtIdprecioDescuento").value = ("$" + (resultado * 1.1) +" y de IIBB usted pago $" + (resultado * 0.1));
+    }
+    else
+    {
+        document.getElementById("txtIdprecioDescuento").value = ("$" + resultado);
+    }
+*/
+/* solo switch */
+
+    switch (cantLamparas)
+    {
+        case 5:
+            {
+                switch (marca)
+                {
+                    case "ArgentinaLuz":
+                        resultado = (cantLamparas * 35 * 0.6);
+                        break;
+                        
+                    default:
+                        resultado = (cantLamparas * 35 * 0.7);
+                }
+            }
+            break;
+
+        case 4:
+            {
+                switch (marca)
+                {
+                    case "ArgentinaLuz":
+                    case "FelipeLamparas":
+                        resultado = (cantLamparas * 35 * 0.75);
+                        break;
+
+                    default:
+                        resultado = (cantLamparas * 35 * 0.8);
+                }
+            }
+            break;
+
+        case 3:
+            {
+                switch (marca)
+                {
+                    case "ArgentinaLuz":
+                        resultado = (cantLamparas * 35 * 0.85);
+                        break;   
+
+                    case "FelipeLamparas":
+                        resultado = (cantLamparas * 35 * 0.9);
+                        break;
+
+                    default:
+                        resultado = (cantLamparas * 35 * 0.95);
+                }
+            }
+            break;
+
+        case 2:
+        case 1:
+            resultado = (cantLamparas * 35);
+            break;
+
+        default:
+            resultado = (cantLamparas * 35 * 0.5);
     }
 
     resultado = resultado.toFixed(2);

@@ -27,13 +27,12 @@ function mostrar()
 						cuenta = 15000*1.2;
 						break;
 
-					case "Cataratas":
-					case "Cordoba":
-						cuenta = 15000*0.9;
+					case "Mar del plata":
+						cuenta = 15000*0.8;
 						break;
 
 					default:
-						cuenta = 15000*0.8;	
+						cuenta = 15000*0.9;	
 				}
 			}
 			break;
@@ -46,34 +45,28 @@ function mostrar()
 						cuenta = 15000*0.8;
 						break;
 
-					case "Cataratas":
-					case "Cordoba":
-						cuenta = 15000*1.1;
+					case "Mar del plata":
+						cuenta = 15000*1.2;
 						break;
 
 					default:
-						cuenta = 15000*1.2;
+						cuenta = 15000*1.1;
 				}
 			}
 			break;
 
-		case "Otoño":
-		case "Primavera":
+		default:
 			{
 				switch (destino)
 				{
-					case "Bariloche":
-					case "Cataratas":
-					case "Mar del plata":
-						cuenta = 15000*1.1;
+					case "Cordoba":
+						cuenta = 15000;
 						break;
 						
 					default:
-						cuenta = 15000;
+						cuenta = 15000*1.1;
 				}
 			}
-			break;
-
 	}
 
 	alert("El precio final de su estadía es de $" + cuenta);
