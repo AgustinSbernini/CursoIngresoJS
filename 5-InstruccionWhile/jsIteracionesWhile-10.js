@@ -64,12 +64,30 @@ function mostrar()
 
 	document.write("La suma de los positivos es " + sumaPositivos + "<br>");
 	document.write("La cantidad de numeros positivos es " + cantPositivos + "<br>");
-	document.write("El promedio de los numeros positivos es " + (sumaPositivos / cantPositivos) + "<br>");
+
+	if (cantPositivos == 0)
+	{
+		document.write("El promedio de los numeros positivos es " + 0 + "<br>");
+	}
+	else
+	{
+		document.write("El promedio de los numeros positivos es " + (sumaPositivos / cantPositivos) + "<br>");
+	}
+
 	document.write("La cantidad de ceros es " + cantCeros + "<br>");
 	document.write("La suma de los negativos es " + sumaNegativos + "<br>");
 	document.write("La cantidad de numeros negativos es " + cantNegativos + "<br>");
-	document.write("El promedio de los numeros negativos es " + (sumaNegativos / cantNegativos) + "<br>");
+
+	if (cantNegativos == 0) 
+	{
+		document.write("El promedio de los numeros negativos es " + 0 + "<br>");
+	}
+	else 
+	{
+		document.write("El promedio de los numeros negativos es " + (sumaNegativos / cantNegativos) + "<br>");
+	}
+
 	document.write("La cantidad de numeros pares es " + cantPares + "<br>");
-	document.write("La diferencia entre numeros positivos y negativos es de " + (sumaPositivos - sumaNegativos));
-	
+	document.write("La diferencia entre numeros positivos y negativos es de " + (sumaPositivos + sumaNegativos));
+
 }
