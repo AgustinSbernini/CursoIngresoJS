@@ -32,12 +32,14 @@ function mostrar()
 			mensaje = "Es de tarde";
 			break;
 		default:
-			mensaje = "Es de noche";
-	}
-
-	if (horaIngresada > 19 && horaIngresada < 25)
-	{
-		mensaje = "Es de noche, a dormir";
+			if (horaIngresada > 19)
+			{
+				mensaje = "Es de noche, a dormir";
+			}
+			else
+			{
+				mensaje = "Es de noche";
+			}
 	}
 
 	alert(mensaje);
